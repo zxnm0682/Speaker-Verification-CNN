@@ -4,15 +4,20 @@
 
 프로젝트 구조
 
-dataset_creator.py	 원본 데이터를 스캔하여 학습용/테스트용 CSV 쌍을 생성하고, 오디오 길이를 기준으로 필터링 및 클리닝을 수행합니다.
+dataset_creator.py	 
+원본 데이터를 스캔하여 학습용/테스트용 CSV 쌍을 생성하고, 오디오 길이를 기준으로 필터링 및 클리닝을 수행합니다.
 
-dataloader.py	WAV  파일을 로드하고, 학습 속도를 높이기 위해 메모리에 데이터를 캐싱하는 CachedWavPairDataset 클래스를 포함합니다.
+dataloader.py	WAV  
+파일을 로드하고, 학습 속도를 높이기 위해 메모리에 데이터를 캐싱하는 CachedWavPairDataset 클래스를 포함합니다.
 
-model.py	 1D CNN 아키텍처 정의 및 컴파일, 학습(Fit), 콜백(EarlyStopping, ReduceLROnPlateau) 설정 등 학습 파이프라인을 담당합니다.
+model.py	 
+1D CNN 아키텍처 정의 및 컴파일, 학습(Fit), 콜백(EarlyStopping, ReduceLROnPlateau) 설정 등 학습 파이프라인을 담당합니다.
 
-visualize.py	 모델 성능 분석을 위한 Loss/Accuracy 그래프 시각화 및 Confusion Matrix 출력 함수를 포함합니다.
+visualize.py	 
+모델 성능 분석을 위한 Loss/Accuracy 그래프 시각화 및 Confusion Matrix 출력 함수를 포함합니다.
 
-main.py	 전체 워크플로우를 제어하는 엔트리 포인트입니다.
+main.py	 
+전체 워크플로우를 제어하는 엔트리 포인트입니다.
 
 모델 구조
 
